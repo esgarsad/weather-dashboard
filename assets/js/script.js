@@ -71,7 +71,7 @@ foreCards[i].append(tempFore,weatherFore,windFore,humFore);
 }}}
 
 // function to get geo location -2-
-var lookcoordinates = function(cityToLook) {
+var lookcoordinates = function(cityToLook) { 
 var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityToLook + "&appid=f1718b72fe98852fe1dc33c4315c5ec9"
 
 fetch(apiUrl)
