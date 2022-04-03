@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title"> Weather Dashboard</h1>
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-2">
+      <div class="card">
+        <h2 class="card-header">Search For a City:</h2>
+        <form id="city-form" class="card-body">
+          <input name="city-target" class="city-target" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+       <div class="recents">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-10">
+        <div class="todays">
+            <h2 id="city-shown" class="subtitle">Today weather for: </h2>
+            <div id="weather-container" class="list-group">
+            </div>
+        </div>
+          <h2 class = "forecast-text">5 Day forecast</h2>
+         <div class="card  flex-row justify-space-between">
+            <div id="day-0" class="col-6 col-md-2 card daily-card card1">
+            </div>
+            <div id="day-1" class="col-6 col-md-2 card daily-card card2">
+            </div>
+            <div id="day-2" class="col-6 col-md-2 card daily-card card3">
+            </div>
+            <div id="day-3" class="col-6 col-md-2 card daily-card card4">
+            </div>
+            <div id="day-4" class="col-6 col-md-2 card daily-card card5">
+            </div>
+        </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
