@@ -15,7 +15,7 @@ var cardsEl4= document.querySelector(".card4");
 var cardsEl5= document.querySelector(".card5");
 var recentEl= document.querySelector(".recents");
 
-//looks for current weather with coordinates from previous function
+//looks for current weather with coordinates from previous function -3-
 var weatherLook = function(cityLat,cityLon,cityName,cityState) {
 var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + cityLat + "&lon=" + cityLon + "&units=metric&exclude=minutely,hourly&appid=f1718b72fe98852fe1dc33c4315c5ec9";
 // make a fetch to url
@@ -48,7 +48,7 @@ fetch(apiUrl)
 console.log(currWeather)
 displayForecast(data);
 });
-//creates forecast with wame data -3-
+//creates forecast with wame data -4-
 var displayForecast = function(data) {
 for (var i = 0; i < 5; i++ ) {
   var foreTemp = data.daily[i].temp.day;
@@ -72,7 +72,7 @@ foreCards[i].append(tempFore,weatherFore,windFore,humFore);
 
 // function to get geo location -2-
 var lookcoordinates = function(cityToLook) { 
-var secondapiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityToLook + "&appid=f1718b72fe98852fe1dc33c4315c5ec9"
+var secondapiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityToLook + "&appid=f1718b72fe98852fe1dc33c4315c5ec9"
 
 fetch(secondapiUrl)
 .then(function (response) {
